@@ -1,6 +1,6 @@
 #//include <Wire.h>
-#include <FirebaseArduino.h>
-#include <ArduinoJson.h>
+#//include <FirebaseArduino.h>
+#//include <ArduinoJson.h>
 #define FLOWSENSORPIN 2
 #define SENSOR011 A0
 #define SENSOR021 A1
@@ -288,23 +288,8 @@ void loop()                     // run over and over again
         webpage += "<h2>Soil Temperature: ";
         webpage += stemp;
         webpage += "</h2>";
-        
-        //Firebase
-        webpage += "<script src=\"https://www.gstatic.com/firebasejs/5.3.0/firebase.js\"></script>";
-        webpage +="<script>";
-        // Initialize Firebase
-        webpage += "var config = {";
-        webpage += "apiKey: \"AIzaSyCTL12mr58fEfPOijxDV0baPrTPgo0LU0c\",";
-        webpage += "authDomain: \"stanford-farm.firebaseapp.com\",";
-        webpage += "databaseURL: \"https://stanford-farm.firebaseio.com\", ";
-        webpage += "projectId: \"stanford-farm\",";
-        webpage += "storageBucket: \"stanford-farm.appspot.com\",";
-        webpage += "messagingSenderId: \"1082450724421\" ";
-        webpage += "};";
-        webpage += "firebase.initializeApp(config);";
-        webpage += "</script>";
 
-
+// BART!!!!!!!!!!!! ADD THE IP ADDRESS BELOW, IN THE FORMAT OF HTTP://XX.XX.XX.XX:80/
         webpage += "<script> $(\".led\").click(function() {    var p = $(this).attr('id');     $.get(\"http://10.35.122.11:80/\", {pin:p}); });</script>";
 
         
