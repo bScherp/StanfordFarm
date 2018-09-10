@@ -8,24 +8,24 @@
 #define S061 A5
 
 //Solenoid I/O 
-#define BED1 31
-#define BED2 32
-#define BED3 33
-#define BED4 34
-#define BED5 35
-#define BED6 36
-#define BED7 37
+#define BED1 24
+#define BED2 26
+#define BED3 28
+#define BED4 30
+#define BED5 32
+#define BED6 34
+#define BED7 36
 #define BED8 38
-#define BED9 39
-#define BED10 40
-#define BED11 41
-#define BED12 42
-#define BED13 43
-#define BED14 44
-#define BED15 45
+#define BED9 40
+#define BED10 42
+#define BED11 44
+#define BED12 46
+#define BED13 48
+#define BED14 50
+#define BED15 52
 
 //-----SETTINGS-----//
-int readingDelay = 1000;
+int readingDelay = 2000;
 
 // Sensor Values
 int s011 = 0;
