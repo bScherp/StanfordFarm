@@ -126,7 +126,7 @@ void readAndUploadData() {
 
 void processChanges() {
   // Initiate irrigation state
-  String msg = "&1:" + String(iG1) + "#2:" + String(iG2) + "#3:" + String(iG3) + "#4:";
+  String msg = "#1:" + String(iG1) + "#2:" + String(iG2) + "#3:" + String(iG3) + "#4:";
   msg += String(iG4) + "#5:" + String(iG5) + "#6:" + String(iG6) + "#7:" + String(iG7) + "#8:";
   msg += String(iG8) + "#9:" + String(iG9) + "#10:" + String(iG10) + "#11:" + String(iG11) + "#12:";
   msg += String(iG12) + "#13:" + String(iG13) + "#14:" + String(iG14) + "#15:" + String(iG15) + "#" + String(response_i);
