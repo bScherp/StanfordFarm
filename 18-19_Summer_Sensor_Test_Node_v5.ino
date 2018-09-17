@@ -130,6 +130,7 @@ void getSensorReadings() {
   int type;
   String num;
   if (Serial.available() > 0) {
+    Serial.readStringUntil('@');
     while (Serial.available() > 0) {
        typeStr = Serial.readStringUntil(':');
        type = typeStr.toInt();
